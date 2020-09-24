@@ -10,8 +10,18 @@
 
 </body>
 <script>
-$.getJSON("https://hq.sinajs.cn/list=sz002307,sh600928",(res)=>{
+{# $.get("https://hq.sinajs.cn/list=sz002307,sh600928",(res)=>{
   Document.write(res)
-})
+}) #}
+var url = 'https://hq.sinajs.cn/list=sz002307,sh600928'
+$.ajax({
+  type:"get",
+  url:urlInfo,
+  async:true,
+  data:{},
+  success : function(result){
+    console.log(result)
+  }
+});
 </script>
 </html>
