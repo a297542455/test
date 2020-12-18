@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .err-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-</body>
-<script>
-{# $.get("https://hq.sinajs.cn/list=sz002307,sh600928",(res)=>{
-  Document.write(res)
-}) #}
-var urlInfo = 'https://hq.sinajs.cn/list=sz002307,sh600928'
-$.ajax({
-  type:"get",
-  url:urlInfo,
-  async:true,
-  data:{},
-  success : function(result){
-    console.log(result)
-  }
-});
-</script>
+    .tips {
+      text-align: center;
+      color: #a6a6a6;
+      font-size: 27px;
+    }
+    .text {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    .img-contain {
+      width: 400px;
+      height: auto;
+      margin: auto;
+      margin-bottom: 70px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <div class="err-panel">
+      <div class="contain">
+        <p class="tips">傻孩子</p>
+        <p class="tips">爸爸爱你</p>
+        <p class="tips text">
+          <a
+            href="https://panjiachen.gitee.io/vue-element-admin/#/login?redirect=%2Fdashboard"
+            >后台地址</a
+          >
+        </p>
+        <div class="img-contain">
+          <img src="./111.jpg" alt sizes srcset />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
